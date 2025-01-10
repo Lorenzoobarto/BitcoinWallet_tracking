@@ -29,7 +29,6 @@ Una volta avviato BitAlert, nella prima pagina, si avrà l'opzione di scegliere 
 - Inserisci un wallet valido e un'email su cui vuoi ricevere le notifiche sulle nuove transazioni confermate.
 
 ## Setup del Progetto
-
 **PREREQUISITI**
 - Python 3.8 o superiore.
 - Librerie richieste (installabili con pip):
@@ -37,9 +36,26 @@ Una volta avviato BitAlert, nella prima pagina, si avrà l'opzione di scegliere 
 pip install flask matplotlib requests python-docx openpyxl
 ```
 **CONFIGURAZIONE**
-1. Configura il file **BitAlert.py** con le tue credenziali email per inviare notifiche:
+1. Crea un account email da cui verranno inviate le notifiche per le transazioni confermate avvenute sul wallet.
+2. Configura il file **BitAlert.py** con le tue credenziali email per inviare notifiche:
 ```bash
-EMAIL_ADDRESS = "tuo_email@gmail.com"
-EMAIL_PASSWORD = "tua_password_app"
+EMAIL_ADDRESS = "tuo_email@gmail.com"  # Email del mittente
+EMAIL_PASSWORD = "tua_password_app"  # App password generata
 ```
-2. Assicurati che i file **template.docx** e **template.xlsx** siano nella directory corretta.
+3. Assicurati che i file **template.docx** e **template.xlsx** siano nella directory corretta.
+
+## Esecuzione
+1. Avvia l'applicazione:
+```bash
+python BitAlert.py
+```
+2. Accedi all'applicazione tramite il browser:
+```bash
+http://127.0.0.1:5000
+```
+
+## Note Tecniche
+- Grafici generati con Matplotlib.
+- Email inviate tramite SMTP.
+- Report creati utilizzando i template Word ed Excel caricati.
+
