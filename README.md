@@ -59,3 +59,8 @@ http://127.0.0.1:5000
 - Email inviate tramite SMTP.
 - Report creati utilizzando i template Word ed Excel caricati.
 
+# Stato del progetto
+Questo progetto è in fase di sviluppo e di debug. Verranno in futuro aggiornamenti per migliorare funzionalità, prestazioni e stabilità. Attualmente sto lavorando su miglioramenti e risoluzione di bug.
+
+**PROBLEMI NOTI**
+- **Errore nello scaricamento dei report:** Attualmente ci sono problemi durante la generazione e il download dei report in formato Word ed Excel.
