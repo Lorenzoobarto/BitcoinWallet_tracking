@@ -16,8 +16,8 @@ app = Flask(__name__)     # Inizializza l'app Flask
 
 
 # Configurazione email
-EMAIL_ADDRESS = "trackvengers@gmail.com"  # Email del mittente
-EMAIL_PASSWORD = "rzbvgnrjmthpmhlz"  # App password generata
+EMAIL_ADDRESS = "tuo_email@gmail.com"  # Email del mittente
+EMAIL_PASSWORD = "tua_password_app"  # App password generata
 
 
 # Lista di wallet conosciuti
