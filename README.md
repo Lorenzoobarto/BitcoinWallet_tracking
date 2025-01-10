@@ -27,3 +27,19 @@ Una volta avviato BitAlert, nella prima pagina, si avrà l'opzione di scegliere 
 
 **ALERT SU TRANSAZIONI**
 - Inserisci un wallet valido e un'email su cui vuoi ricevere le notifiche sulle nuove transazioni confermate.
+
+## Setup del Progetto
+
+**PREREQUISITI**
+- Python 3.8 o superiore.
+- Librerie richieste (installabili con pip):
+```bash
+pip install flask matplotlib requests python-docx openpyxl
+```
+**CONFIGURAZIONE**
+1. Configura il file **BitAlert.py** con le tue credenziali email per inviare notifiche:
+```bash
+EMAIL_ADDRESS = "tuo_email@gmail.com"
+EMAIL_PASSWORD = "tua_password_app"
+```
+2. Assicurati che i file **template.docx** e **template.xlsx** siano nella directory corretta.
